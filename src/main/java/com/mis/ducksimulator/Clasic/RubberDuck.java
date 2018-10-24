@@ -23,6 +23,11 @@ public class RubberDuck extends Duck{
     public void display() {
         System.out.println("I'm RubberDuke");
     }
+
+    @Override
+    public void fly() throws Exception {
+        throw new Exception("I can not fly");        
+    }
     
     
     

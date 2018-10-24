@@ -18,7 +18,7 @@ public class Duck {
         System.out.println("swim");
     }
     
-    public void quack(){
+    public void quack() throws Exception{
         System.out.println("quack");
     }
     
@@ -26,7 +26,7 @@ public class Duck {
         System.out.println("I'm a Duck");
     }
     
-    public void fly(){
+    public void fly() throws Exception{
         System.out.println("fly");
     }
     
