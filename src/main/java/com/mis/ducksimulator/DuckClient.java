@@ -5,6 +5,11 @@
  */
 package com.mis.ducksimulator;
 
+import com.mis.ducksimulator.Clasic.Duck;
+import com.mis.ducksimulator.Clasic.MallardDuck;
+import com.mis.ducksimulator.Clasic.RedHeadDuck;
+import com.mis.ducksimulator.Clasic.RubberDuck;
+
 /**
  *
  * @author admin
@@ -16,7 +21,17 @@ public class DuckClient {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Prueba");
+        Duck duck = new Duck();
+        MallardDuck mallarDuck = new MallardDuck();
+        RedHeadDuck redHeadDuck = new RedHeadDuck();
+        RubberDuck rubberDuck = new RubberDuck();
+        
+        duck.display();
+        redHeadDuck.display();
+        mallarDuck.display();
+        
+        rubberDuck.fly();
+        
     }
     
 }
