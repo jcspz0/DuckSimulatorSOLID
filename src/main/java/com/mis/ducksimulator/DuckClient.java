@@ -22,12 +22,13 @@ public class DuckClient {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        try {
-            // TODO code application logic here
-            Duck duck = new Duck();
+        Duck duck = new Duck();
             MallardDuck mallarDuck = new MallardDuck();
             RedHeadDuck redHeadDuck = new RedHeadDuck();
             RubberDuck rubberDuck = new RubberDuck();
+        try {
+            // TODO code application logic here
+            
             
             duck.quack();
             redHeadDuck.display();
@@ -37,7 +38,7 @@ public class DuckClient {
         } catch (Exception ex) {
             Logger.getLogger(DuckClient.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+        redHeadDuck.fly();
     }
     
 }
