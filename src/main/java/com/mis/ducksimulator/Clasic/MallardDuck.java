@@ -9,9 +9,12 @@ package com.mis.ducksimulator.Clasic;
  *
  * @author admin
  */
-public class MallardDuck  implements Flyable,Quackable,Duck{
+public class MallardDuck  implements Quackable,Duck{
 
+    private MallarFlyBehavior flyBehavior;
+    
     public MallardDuck() {
+        this.flyBehavior = new MallarFlyBehavior();
     }
 
     @Override
@@ -19,9 +22,8 @@ public class MallardDuck  implements Flyable,Quackable,Duck{
         System.out.println("I'm MallarDuck");
     }
 
-    @Override
     public void fly() {
-        System.out.println("MallardDuck Fly");
+        this.flyBehavior.fly();
     }
 
     @Override

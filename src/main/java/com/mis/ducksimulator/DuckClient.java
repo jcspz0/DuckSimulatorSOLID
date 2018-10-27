@@ -27,18 +27,18 @@ public class DuckClient {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Duck mallarDuck = new MallardDuck();
-        Duck redHeadDuck = new RedHeadDuck();
-        Duck rubberDuck = new RubberDuck();
-        Duck decoyDuck = new DecoyDuck();
+        MallardDuck mallarDuck = new MallardDuck();
+        RedHeadDuck redHeadDuck = new RedHeadDuck();
+        RubberDuck rubberDuck = new RubberDuck();
+        DecoyDuck decoyDuck = new DecoyDuck();
         
         Duck duckmallar = new MallardDuck();
         
         //MallarDuck
         mallarDuck.display();
         mallarDuck.swim();
-//        mallarDuck.quack();
-//        mallarDuck.fly();
+        mallarDuck.quack();
+        mallarDuck.fly();
         //redheadDuck
         redHeadDuck.display();
         redHeadDuck.swim();

@@ -9,8 +9,14 @@ package com.mis.ducksimulator.Clasic;
  *
  * @author admin
  */
-public interface Flyable {
-    
-    void fly();
+public class MallarFlyBehavior implements FlyBehavior{
+
+    public MallarFlyBehavior() {
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Mallard fly");
+    }
     
 }

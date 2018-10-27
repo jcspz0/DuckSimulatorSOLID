@@ -9,7 +9,7 @@ package com.mis.ducksimulator.Clasic;
  *
  * @author admin
  */
-public class RedHeadDuck  implements Flyable, Quackable, Duck{
+public class RedHeadDuck  implements  Quackable, Duck{
 
     public RedHeadDuck() {
     }
@@ -19,10 +19,10 @@ public class RedHeadDuck  implements Flyable, Quackable, Duck{
         System.out.println("I'm RedHeadDuck");
     }
 
-    @Override
-    public void fly() {
-        System.out.println("RedheadDuck Fly");
-    }
+//    @Override
+//    public void fly() {
+//        System.out.println("RedheadDuck Fly");
+//    }
 
     @Override
     public void quack() {
