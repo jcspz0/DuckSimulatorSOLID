@@ -9,7 +9,7 @@ package com.mis.ducksimulator.Clasic;
  *
  * @author admin
  */
-public class RubberDuck extends Duck{
+public class RubberDuck extends Duck implements Quackable{
 
     public RubberDuck() {
     }
@@ -24,10 +24,7 @@ public class RubberDuck extends Duck{
         System.out.println("I'm RubberDuke");
     }
 
-    @Override
-    public void fly() throws Exception {
-        throw new Exception("I can not fly");        
-    }
+    
     
     
     

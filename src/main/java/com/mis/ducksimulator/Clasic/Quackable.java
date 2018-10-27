@@ -9,16 +9,8 @@ package com.mis.ducksimulator.Clasic;
  *
  * @author admin
  */
-public class DecoyDuck extends Duck{
-
-    public DecoyDuck() {
-    }
-
-    @Override
-    public void display() {
-        System.out.println("I'm decoyDuck");
-    }
-
+public interface Quackable {
     
+    void quack();
     
 }

@@ -18,16 +18,10 @@ public class Duck {
         System.out.println("swim");
     }
     
-    public void quack() throws Exception{
-        System.out.println("quack");
-    }
-    
     public void display(){
         System.out.println("I'm a Duck");
     }
     
-    public void fly() throws Exception{
-        System.out.println("fly");
-    }
+
     
 }
