@@ -9,7 +9,7 @@ package com.mis.ducksimulator.Clasic;
  *
  * @author admin
  */
-public class RubberDuck extends Duck implements Quackable{
+public class RubberDuck  implements Quackable, Duck{
 
     public RubberDuck() {
     }
@@ -22,6 +22,11 @@ public class RubberDuck extends Duck implements Quackable{
     @Override
     public void display() {
         System.out.println("I'm RubberDuke");
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("swim");
     }
 
     

@@ -10,7 +10,9 @@ import com.mis.ducksimulator.Clasic.Duck;
 import com.mis.ducksimulator.Clasic.MallardDuck;
 import com.mis.ducksimulator.Clasic.RedHeadDuck;
 import com.mis.ducksimulator.Clasic.RubberDuck;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,14 +27,36 @@ public class DuckClient {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Duck duck = new Duck();
-        MallardDuck mallarDuck = new MallardDuck();
-        RedHeadDuck redHeadDuck = new RedHeadDuck();
-        RubberDuck rubberDuck = new RubberDuck();
-        DecoyDuck decoyDuck = new DecoyDuck();
-        redHeadDuck.display();
+        Duck mallarDuck = new MallardDuck();
+        Duck redHeadDuck = new RedHeadDuck();
+        Duck rubberDuck = new RubberDuck();
+        Duck decoyDuck = new DecoyDuck();
+        
+        Duck duckmallar = new MallardDuck();
+        
+        //MallarDuck
         mallarDuck.display();
-        redHeadDuck.fly();
+        mallarDuck.swim();
+//        mallarDuck.quack();
+//        mallarDuck.fly();
+        //redheadDuck
+        redHeadDuck.display();
+        redHeadDuck.swim();
+//        redHeadDuck.quack();
+//        redHeadDuck.fly();
+        //rubberDuck
+        rubberDuck.display();
+        rubberDuck.swim();
+//        rubberDuck.quack();
+//        rubberDuck.fly();
+        //decoyDuck
+        decoyDuck.display();
+        decoyDuck.swim();
+//        decoyDuck.quack();
+//        decoyDuck.fly();
+        
+
+
         
         
         
@@ -40,10 +64,10 @@ public class DuckClient {
         
         
         
-        
-        
-        List<Duck> List = new ArrayList<>();
-        
+        List<Duck> List = Arrays.asList(mallarDuck,redHeadDuck,redHeadDuck,redHeadDuck);
+        for (Duck aDuck : List) {
+            aDuck.swim();
+        }
     }
     
 }

@@ -9,7 +9,7 @@ package com.mis.ducksimulator.Clasic;
  *
  * @author admin
  */
-public class DecoyDuck extends Duck{
+public class DecoyDuck implements Duck{
 
     public DecoyDuck() {
     }
@@ -17,6 +17,11 @@ public class DecoyDuck extends Duck{
     @Override
     public void display() {
         System.out.println("I'm decoyDuck");
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("swim");
     }
 
     

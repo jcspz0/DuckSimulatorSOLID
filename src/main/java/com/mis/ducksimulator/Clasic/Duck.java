@@ -9,19 +9,10 @@ package com.mis.ducksimulator.Clasic;
  *
  * @author admin
  */
-public class Duck {
+public interface Duck {
 
-    public Duck() {
-    }
+    void swim();
     
-    public void swim(){
-        System.out.println("swim");
-    }
-    
-    public void display(){
-        System.out.println("I'm a Duck");
-    }
-    
-
+    void display();
     
 }
