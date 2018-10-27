@@ -11,8 +11,6 @@ package com.mis.ducksimulator.Clasic;
  */
 public interface Duck {
 
-    
-    
     void display();
     
 }
