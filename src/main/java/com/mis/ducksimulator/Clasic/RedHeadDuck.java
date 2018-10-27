@@ -9,8 +9,12 @@ package com.mis.ducksimulator.Clasic;
  *
  * @author admin
  */
-public class RedHeadDuck  implements  Quackable, Duck{
+public class RedHeadDuck  implements Duck{
 
+    private FlyBehavior flyBehavior;
+    private QuackBehavior quackBehavior;
+    private SwimBehavior swimBehavior;
+    
     public RedHeadDuck() {
     }
 
@@ -19,19 +23,32 @@ public class RedHeadDuck  implements  Quackable, Duck{
         System.out.println("I'm RedHeadDuck");
     }
 
-//    @Override
-//    public void fly() {
-//        System.out.println("RedheadDuck Fly");
-//    }
-
-    @Override
-    public void quack() {
-        System.out.println("quack");
+    public void fly() {
+        this.flyBehavior = new FlyBehavior() {
+            @Override
+            public void fly() {
+                System.out.println("RedHead fly");
+            }
+        };
     }
 
-    @Override
+    
+    public void quack() {
+        this.quackBehavior = new QuackBehavior() {
+            @Override
+            public void quack() {
+                System.out.println("Redhead quack");
+            }
+        };
+    }
+
     public void swim() {
-        System.out.println("swim");
+        this.swimBehavior = new SwimBehavior() {
+            @Override
+            public void swim() {
+                System.out.println("redHead swim");
+            }
+        };
     }
     
 }

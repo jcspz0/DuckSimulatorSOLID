@@ -35,28 +35,28 @@ public class DuckClient {
         Duck duckmallar = new MallardDuck();
         
         //MallarDuck
-        mallarDuck.display();
-        mallarDuck.swim();
-        mallarDuck.quack();
-        mallarDuck.fly();
-        //redheadDuck
-        redHeadDuck.display();
-        redHeadDuck.swim();
-//        redHeadDuck.quack();
-//        redHeadDuck.fly();
-        //rubberDuck
-        rubberDuck.display();
-        rubberDuck.swim();
-//        rubberDuck.quack();
-//        rubberDuck.fly();
-        //decoyDuck
-        decoyDuck.display();
-        decoyDuck.swim();
+//        mallarDuck.display();
+//        mallarDuck.swim();
+//        mallarDuck.quack();
+//        mallarDuck.fly();
+//        //redheadDuck
+//        redHeadDuck.display();
+//        redHeadDuck.swim();
+////        redHeadDuck.quack();
+////        redHeadDuck.fly();
+//        //rubberDuck
+//        rubberDuck.display();
+//        rubberDuck.swim();
+////        rubberDuck.quack();
+////        rubberDuck.fly();
+//        //decoyDuck
+//        decoyDuck.display();
+//        decoyDuck.swim();
 //        decoyDuck.quack();
 //        decoyDuck.fly();
         
 
-
+          
         
         
         
@@ -64,9 +64,10 @@ public class DuckClient {
         
         
         
-        List<Duck> List = Arrays.asList(mallarDuck,redHeadDuck,redHeadDuck,redHeadDuck);
+        List<Duck> List = Arrays.asList(mallarDuck,redHeadDuck,rubberDuck,decoyDuck);
         for (Duck aDuck : List) {
-            aDuck.swim();
+            aDuck.display();
+            
         }
     }
     

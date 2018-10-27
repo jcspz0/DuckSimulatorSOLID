@@ -9,7 +9,7 @@ package com.mis.ducksimulator.Clasic;
  *
  * @author admin
  */
-public interface Quackable {
+public interface QuackBehavior {
     
     void quack();
     

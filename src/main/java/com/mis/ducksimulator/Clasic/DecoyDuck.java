@@ -11,6 +11,8 @@ package com.mis.ducksimulator.Clasic;
  */
 public class DecoyDuck implements Duck{
 
+    private SwimBehavior swimBehavior;
+    
     public DecoyDuck() {
     }
 
@@ -19,9 +21,14 @@ public class DecoyDuck implements Duck{
         System.out.println("I'm decoyDuck");
     }
 
-    @Override
+    
     public void swim() {
-        System.out.println("swim");
+        this.swimBehavior = new SwimBehavior() {
+            @Override
+            public void swim() {
+                System.out.println("decoy swim");
+            }
+        };
     }
 
     

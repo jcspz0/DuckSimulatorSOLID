@@ -9,10 +9,8 @@ package com.mis.ducksimulator.Clasic;
  *
  * @author admin
  */
-public interface Duck {
-
+public interface SwimBehavior {
     
-    
-    void display();
+    void swim();
     
 }

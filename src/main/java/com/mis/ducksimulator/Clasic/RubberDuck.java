@@ -9,24 +9,33 @@ package com.mis.ducksimulator.Clasic;
  *
  * @author admin
  */
-public class RubberDuck  implements Quackable, Duck{
+public class RubberDuck  implements Duck{
 
+    private QuackBehavior quackBehavior;
+    private SwimBehavior swimBehavior;
+    
     public RubberDuck() {
     }
 
-    @Override
     public void quack() {
-        System.out.println("squike");
+        this.quackBehavior = new QuackBehavior() {
+            @Override
+            public void quack() {
+                System.out.println("squick");
+            }
+        };
     }
 
     @Override
     public void display() {
-        System.out.println("I'm RubberDuke");
+        System.out.println("I'm RubberDuck");
     }
 
-    @Override
+    
     public void swim() {
-        System.out.println("swim");
+        this.swimBehavior = () -> {
+            System.out.println("rubber swim");
+        };
     }
 
     
